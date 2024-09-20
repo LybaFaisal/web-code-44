@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="register2.css">
+</head>
+<body>
+    <div class="container animate__animated animate__fadeIn">
+        <h1>QUEST TECH REGISTRATION FORM</h1>
+        <form id="registration-form">
+            <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first_name" placeholder="Enter your First Name" required>
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last_name" placeholder="Enter your Last Name" required>
+            </div>
+            <div class="form-group">
+                <label for="student-number">Student Number</label>
+                <input type="text" id="student-number" name="student_number" placeholder="Enter your own contact number" required >
+            </div>
+            <div class="form-group">
+                <label for="degree-program">Area Of Interest</label>
+                <select id="degree-program" name="degree_program" required >
+                    <option value="">Please Select</option>
+                    <option value="BS Computer Science">Website Development</option>
+                    <option value="BS Information Technology">Graphic Designing</option>
+                    <option value="BS Electronics Engineering">Social Media Marketing</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="phone-number">Father's Contact</label>
+                <input type="tel" id="phone-number" name="phone_number" inputmode="numeric" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Enter your Father's Contact Number" required>
+            </div>
+            <div class="form-group">
+                <label for="birth-date">Birth Date</label>
+                <div class="birth-date-container">
+                    <select id="birth-date-month" name="birth_date_month" required>
+                        <option value="">Month</option>
+                        <!-- Options for months -->
+                    </select>
+                    <input type="number" id="birth-date-day" name="birth_date_day" min="1" max="31" placeholder="Date" required>
+                    <select id="birth-date-year" name="birth_date_year" required>
+                        <option value="">Year</option>
+                        <!-- Options for years -->
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="present-address">Present Address</label>
+                <input type="text" id="present-address" name="present_address" placeholder="Your Present Address" required>
+            </div>
+            <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" placeholder="Your City" required>
+            </div>
+            <div class="form-group">
+                <label for="province">Province</label>
+                <input type="text" id="province" name="province" placeholder="Your Province" required>
+            </div>
+            <div class="form-group">
+                <label for="postal-code">Postal Code</label>
+                <input type="text" id="postal-code" name="postal_code" placeholder="postal-code" required>
+            </div>
+            <div class="form-group">
+                <label for="country">Country</label>
+                <input type="text" id="country" name="country" placeholder="Your Country" required>
+            </div>
+            <div class="form-group">
+                <label for="emergency-contact">Emergency Contact</label>
+                <input type="text" id="emergency-contact" name="emergency_contact" placeholder="Name of emergency contact" required>
+            </div>
+            <div class="form-group">
+                <label for="emergency-phone">Emergency Phone</label>
+                <input type="tel" id="emergency-phone" name="emergency_phone" inputmode="numeric" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Emergency Phone Number" required>
+            </div>
+            <div class="form-group">
+                <label for="highschool">Highschool</label>
+                <input type="text" id="highschool" name="highschool" placeholder="Your Highschool Name" required>
+            </div>
+            <div class="form-group">
+                <label for="scholarship">Do You Have Any Scholarship?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="scholarship" value="Yes" required>Yes</label>
+                    <label><input type="radio" name="scholarship" value="No" required>No</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="comments">Suggestions and Comments</label>
+                <textarea id="comments" name="comments" rows="3" placeholder="Enter any suggestions or comments"></textarea>
+            </div>
+            <form id="registration-form">
+                <!-- Your form fields here -->
+                <button type="submit" class="register-btn">SUBMIT</button>
+            </form>
+        </form>
+    </div>
+
+    <script src="register2.js"></script>
+</body>
+</html>
